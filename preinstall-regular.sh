@@ -7,8 +7,9 @@ if [ $( id -u ) -eq 0 ]; then
 	exit 2
 fi
 
-# $USER is your root or your regular user name
-DIR_DEVELOP=/home/$USER/develop
+# $USER is root or your regular user name
+# $USERNAME is your regular user name, EVEN when you execute as root
+DIR_DEVELOP=/home/$USERNAME/develop
 
 # This is the script that prepares for the transformation from LMDE to Swift Linux
 
