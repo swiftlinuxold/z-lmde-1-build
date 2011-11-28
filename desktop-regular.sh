@@ -10,6 +10,8 @@ fi
 
 # $USER is root or your regular user name
 # $USERNAME is your regular user name, EVEN when you execute as root
+echo $USER
+echo $USERNAME
 DIR_DEVELOP=/home/$USERNAME/develop
 
 # This is the script for transforming antiX Linux into Swift Linux on the desktop.
