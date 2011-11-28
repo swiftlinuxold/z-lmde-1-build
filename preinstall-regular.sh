@@ -7,9 +7,9 @@ if [ $( id -u ) -eq 0 ]; then
 	exit 2
 fi
 
-# $USER is root or your regular user name
-# $USERNAME is your regular user name, EVEN when you execute as root
-DIR_DEVELOP=/home/$USERNAME/develop
+# Get your username (not root)
+UNAME=$(awk -v val=1000 -F ":" '$3==val{print $1}' /etc/passwd)
+DIR_DEVELOP=/home/$UNAME/develop
 
 # This is the script that prepares for the transformation from LMDE to Swift Linux
 

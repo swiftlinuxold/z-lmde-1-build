@@ -8,8 +8,9 @@ if [ ! $( id -u ) -eq 0 ]; then
 	exit 2
 fi
 
-# $USER is root or your regular user name
-# $USERNAME is your regular user name, EVEN when you execute as root
+# Get your username (not root)
+UNAME=$(awk -v val=1000 -F ":" '$3==val{print $1}' /etc/passwd)
+DIR_DEVELOP=''
 
 # The remastering process uses chroot mode.
 # Check to see if this script is operating in chroot mode.
@@ -19,7 +20,7 @@ if [ -d "/home/mint" ]; then
 	IS_CHROOT=1 # in chroot mode
 	DIR_DEVELOP=/usr/local/bin/develop 
 else
-	DIR_DEVELOP=/home/$USERNAME/develop 
+	DIR_DEVELOP=/home/$UNAME/develop 
 fi
 
 # This is the script for transforming LMDE into Regular Swift Linux.

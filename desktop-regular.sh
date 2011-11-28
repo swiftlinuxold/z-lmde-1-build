@@ -8,17 +8,15 @@ if [ ! $( id -u ) -eq 0 ]; then
 	exit
 fi
 
-# $USER is root or your regular user name
-# $USERNAME is your regular user name, EVEN when you execute as root
-echo $USER
-echo $USERNAME
-DIR_DEVELOP=/home/$USERNAME/develop
+# Get your username (not root)
+UNAME=$(awk -v val=1000 -F ":" '$3==val{print $1}' /etc/passwd)
+DIR_DEVELOP=/home/$UNAME/develop
 
-# This is the script for transforming antiX Linux into Swift Linux on the desktop.
+# This is the script for transforming LMDE into Swift Linux on the desktop.
 
-su -c "sh $DIR_DEVELOP/1-build/preinstall-regular.sh" $USERNAME
+su -c "sh $DIR_DEVELOP/1-build/preinstall-regular.sh" $UNAME
 
 rm -r $DIR_DEVELOP/temp
-su -c "mkdir $DIR_DEVELOP/temp" $USERNAME
+su -c "mkdir $DIR_DEVELOP/temp" $UNAME
 sh $DIR_DEVELOP/1-build/shared-regular.sh | tee $DIR_DEVELOP/temp/screenoutput.txt
-chown $USERNAME:users $DIR_DEVELOP/temp/screenoutput.txt
+chown $UNAME:users $DIR_DEVELOP/temp/screenoutput.txt
