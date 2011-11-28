@@ -14,7 +14,7 @@ DIR_DEVELOP=''
 
 # The remastering process uses chroot mode.
 # Check to see if this script is operating in chroot mode.
-# /srv directory only exists in chroot mode
+# /home/mint directory only exists in chroot mode
 IS_CHROOT=0
 if [ -d "/home/mint" ]; then
 	IS_CHROOT=1 # in chroot mode
@@ -22,6 +22,9 @@ if [ -d "/home/mint" ]; then
 else
 	DIR_DEVELOP=/home/$UNAME/develop 
 fi
+
+# Everything up to this point is common to the script shared-*.sh and all Bash scripts called by shared-*.sh
+# ==========================================================================================================
 
 # This is the script for transforming LMDE into Regular Swift Linux.
 
