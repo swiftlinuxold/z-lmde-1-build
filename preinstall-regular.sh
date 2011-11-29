@@ -69,7 +69,9 @@ get_rep ui-gnome
 get_rep ui-wm
 get_rep ui-rox
 get_rep browser
-get_rep z-antix-wallpaper-standard
+
+get_rep edition-regular
+
 get_rep z-antix-1-build
 get_rep z-antix-slim
 get_rep z-antix-rox
