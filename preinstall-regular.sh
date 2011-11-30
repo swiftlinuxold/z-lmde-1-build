@@ -73,7 +73,6 @@ get_rep browser
 get_rep edition-regular
 
 get_rep z-antix-1-build
-get_rep z-antix-slim
 get_rep z-antix-rox
 get_rep z-antix-mime
 get_rep z-antix-0-intro
