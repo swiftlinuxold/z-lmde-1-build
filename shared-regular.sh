@@ -33,7 +33,7 @@ fi
 #sh $DIR_DEVELOP/apt/main.sh 
 
 sh $DIR_DEVELOP/ui/main.sh
-sh $DIR_DEVELOP/1-build/cosmetic-regular.sh
+python $DIR_DEVELOP/1-build/cosmetic-regular.py
 
 #sh $DIR_DEVELOP/add_help/main.sh 
 #sh $DIR_DEVELOP/conky/main.sh
