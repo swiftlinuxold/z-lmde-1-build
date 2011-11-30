@@ -14,7 +14,7 @@ DIR_DEVELOP=/home/$UNAME/develop
 
 # This is the script for transforming LMDE into Swift Linux on the desktop.
 
-su -c "sh $DIR_DEVELOP/1-build/preinstall-regular.sh" $UNAME
+su -c "sh $DIR_DEVELOP/1-build/preinstall.sh" $UNAME
 
 rm -r $DIR_DEVELOP/temp
 su -c "mkdir $DIR_DEVELOP/temp" $UNAME
