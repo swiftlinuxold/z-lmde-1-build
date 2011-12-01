@@ -24,7 +24,11 @@ else:
 
 # THIS IS THE SCRIPT FOR PROVIDING THE COSMETIC APPEARANCE OF REGULAR SWIFT LINUX.
 
+print '================================================='
+print 'BEGIN CREATING THE REGULAR SWIFT LINUX APPEARANCE'
+
 import shutil
+
 # Change the SLiM wallpaper
 if (os.path.exists('/usr/share/slim/themes/swift/background.jpg')):
 	os.remove('/usr/share/slim/themes/swift/background.jpg')
@@ -32,8 +36,20 @@ src = dir_develop + '/edition-regular/login-regular.jpg'
 dest = '/usr/share/slim/themes/swift/background.jpg'
 shutil.copy (src, dest)
 
+# Change the IceWM startup script
+
+
+
 # Change the ROX pinboard background
+
+src=dir_develop+'/ui-rox/pinboard/pb_swift'
+dest='/home/'+uname+'/.config/rox.sourceforge.net/ROX-Filer/pb_swift'
+shutil.copyfile(src, dest)
 
 # Change the ROX wallpaper
 
 # Change Conky
+
+
+print 'FINISHED CREATING THE REGULAR SWIFT LINUX APPEARANCE'
+print '===================================================='
