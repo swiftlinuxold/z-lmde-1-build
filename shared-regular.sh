@@ -30,13 +30,13 @@ fi
 
 # Setting up apt-get/Synaptic MUST come first, because
 # some repositories require installing packages.
-#sh $DIR_DEVELOP/apt/main.sh 
+python $DIR_DEVELOP/apt/main.py
 
 python $DIR_DEVELOP/ui-login/main.py
 # python $DIR_DEVELOP/ui-gnome/main.py
-python $DIR_DEVELOP/ui-wm/main.py
-python $DIR_DEVELOP/ui-rox/main.py
-python $DIR_DEVELOP/1-build/cosmetic-regular.py
+#python $DIR_DEVELOP/ui-icewm/main.py
+#python $DIR_DEVELOP/ui-rox/main.py
+#python $DIR_DEVELOP/1-build/cosmetic-regular.py
 
 #sh $DIR_DEVELOP/add_help/main.sh 
 #sh $DIR_DEVELOP/conky/main.sh
