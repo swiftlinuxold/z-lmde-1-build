@@ -63,11 +63,12 @@ echo "Downloading repositories"
 
 # Get repositories for Regular Swift Linux
 get_rep 0-intro
+get_rep apt
 get_rep browser
+get_rep add_apps
 get_rep ui-gnome
 get_rep ui-login
-get_rep ui-icewm
-get_rep ui-rox
+get_rep ui-de
 
 get_rep edition-regular
 
@@ -77,6 +78,7 @@ get_rep z-antix-rox
 get_rep z-antix-mime
 get_rep z-antix-0-intro
 get_rep z-antix-iceape
+get_rep z-antix-conky
 
 #    swiftlinux/z-wallpaper-silicon_valley
 #    swiftlinux/z-sound-silicon_valley

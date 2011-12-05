@@ -31,12 +31,14 @@ fi
 # Setting up apt-get/Synaptic MUST come first, because
 # some repositories require installing packages.
 python $DIR_DEVELOP/apt/main.py
+python $DIR_DEVELOP/browser/main.py
+python $DIR_DEVELOP/add_apps/main.py
 
 python $DIR_DEVELOP/ui-login/main.py
 # python $DIR_DEVELOP/ui-gnome/main.py
-#python $DIR_DEVELOP/ui-icewm/main.py
-#python $DIR_DEVELOP/ui-rox/main.py
-#python $DIR_DEVELOP/1-build/cosmetic-regular.py
+python $DIR_DEVELOP/ui-de/main.py
+python $DIR_DEVELOP/ui-menu/main.py
+# python $DIR_DEVELOP/1-build/cosmetic-regular.py
 
 #sh $DIR_DEVELOP/add_help/main.sh 
 #sh $DIR_DEVELOP/conky/main.sh
@@ -56,5 +58,7 @@ python $DIR_DEVELOP/ui-login/main.py
 
 
 #sh $DIR_DEVELOP/1-build/remove_deb.sh # Removes stored *.deb files, must be executed last
+
+sh $DIR_DEVELOP/1-build/final.sh
 
 exit 0
