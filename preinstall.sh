@@ -63,14 +63,23 @@ echo "Downloading repositories"
 
 # Get repositories for Regular Swift Linux
 get_rep 0-intro
+get_rep edition-regular
+
 get_rep apt
 get_rep browser
 get_rep add_apps
 get_rep ui-gnome
 get_rep ui-login
 get_rep ui-de
+get_rep ui-menu
 
-get_rep edition-regular
+get_rep forensic
+
+get_rep lmde-update
+get_rep remove_packages
+
+
+
 
 get_rep z-antix-1-build
 get_rep z-antix-icewm
