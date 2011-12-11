@@ -71,6 +71,7 @@ get_rep add_apps
 get_rep ui-gnome
 get_rep ui-login
 get_rep ui-de
+get_rep ui-icons
 get_rep ui-menu
 
 get_rep forensic

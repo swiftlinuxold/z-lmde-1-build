@@ -37,6 +37,7 @@ python $DIR_DEVELOP/add_apps/main.py
 python $DIR_DEVELOP/ui-login/main.py
 # python $DIR_DEVELOP/ui-gnome/main.py
 python $DIR_DEVELOP/ui-de/main.py
+python $DIR_DEVELOP/ui-icons/main.py
 python $DIR_DEVELOP/ui-menu/main.py
 # python $DIR_DEVELOP/1-build/cosmetic-regular.py
 
