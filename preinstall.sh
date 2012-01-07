@@ -12,6 +12,9 @@ UNAME=$(awk -v val=1000 -F ":" '$3==val{print $1}' /etc/passwd)
 DIR_DEVELOP=/home/$UNAME/develop
 
 # This is the script that prepares for the transformation from LMDE to Swift Linux
+echo "BEGIN PRE-INSTALLATION PROCEDURE"
+echo "================================"
+
 
 get_rep ()
 	{
@@ -23,7 +26,8 @@ get_rep ()
 	fi
 	return 0
 	}
-
+	
+echo
 echo "PREPARING TO DOWNLOAD REPOSITORIES"
 echo
 echo "Requesting and saving your password"
@@ -59,7 +63,7 @@ fi
 ssh-add -l
 
 # ssh-agent is now implemented.  Now it's time to download all repositories.
-echo "Downloading repositories"
+echo "BEGIN OBTAININING REPOSITORIES"
 
 # Get repositories for Regular Swift Linux
 get_rep 0-intro
@@ -146,9 +150,16 @@ get_rep z-antix-conky
 # get_rep sylpheed
 # get_rep wallpaper-standard
 
+echo "FINISHED DOWNLOADING REPOSITORIES"
+echo "Deleting your password"
+
+
 rm -r /tmp/ssh* # Delete the saved password
-echo "Finished downloading repositories and deleting your password."
+
 
 # sh $DIR_DEVELOP/installer/compile.sh
+
+echo "FINISHED PRE-INSTALLATION PROCEDURE"
+echo "==================================="
 
 exit 0
