@@ -67,89 +67,24 @@ echo "BEGIN OBTAININING REPOSITORIES"
 
 # Get repositories for Regular Swift Linux
 get_rep 0-intro
-get_rep edition-regular
-
+get_rep 1-build
+get_rep 9-test-github
+get_rep add-misc
 get_rep apt
 get_rep browser
-get_rep add_apps
-get_rep ui-gnome
-get_rep ui-login
-get_rep ui-de
-get_rep ui-icons
-get_rep ui-menu
-get_rep ui-config
-get_rep remaster
-
+get_rep edition-regular
 get_rep forensic
-
-get_rep lmde-update
-get_rep remove_packages
-
-
-
-
-get_rep z-antix-1-build
-get_rep z-antix-icewm
-get_rep z-antix-rox
-get_rep z-antix-mime
-get_rep z-antix-0-intro
-get_rep z-antix-iceape
-get_rep z-antix-conky
-
-#    swiftlinux/z-wallpaper-silicon_valley
-#    swiftlinux/z-sound-silicon_valley
-#    swiftlinux/z-antix-1-build
-#    swiftlinux/z-antix-wallpaper-minnesota
-#    swiftlinux/z-antix-wallpaper-chicago
-#    swiftlinux/z-antix-wallpaper-taylorswift
-#    swiftlinux/z-antix-sound-minnesota
-#    swiftlinux/z-antix-sound-chicago
-#    swiftlinux/z-antix-sound-taylorswift
-#    swiftlinux/z-antix-regular
-#    swiftlinux/z-antix-iceape
-#    swiftlinux/z-antix-add_help
-#    swiftlinux/z-antix-wallpaper-standard
-#    swiftlinux/z-antix-slim
-#    swiftlinux/z-antix-rox
-#    swiftlinux/z-antix-mime
-#    swiftlinux/z-antix-installer
-#    swiftlinux/z-antix-icewm
-#    swiftlinux/z-antix-forensic
-#    swiftlinux/z-antix-apt
-#    swiftlinux/z-antix-remove_packages
-#    swiftlinux/z-antix-openoffice
-#    swiftlinux/z-antix-remove_languages
-#    swiftlinux/z-antix-0-intro
-#    swiftlinux/z-antix-sylpheed
-#    swiftlinux/z-antix-security
-#    swiftlinux/z-antix-new-iso
-#    swiftlinux/z-antix-control_center
-#    swiftlinux/z-antix-conky
-#    swiftlinux/z-antix-menu-update
-#    swiftlinux/9-test-github
-#    swiftlinux/z-obsolete-change_files-0_1_1
-#    swiftlinux/z-antix-sounds
-#    swiftlinux/z-wallpapers
-#    swiftlinux/z-cd_dvd_burn
-
-# get_rep 0-intro
-# get_rep add_help
-# get_rep apt
-# get_rep conky
-# get_rep control_center
-# get_rep iceape
-# get_rep icewm
-# get_rep installer
-# get_rep menu-update
-# get_rep mime
-# get_rep new-iso
-# get_rep remove_languages
-# get_rep remove_packages
-# get_rep rox
-# get_rep security
-# get_rep slim
-# get_rep sylpheed
-# get_rep wallpaper-standard
+get_rep installer
+get_rep remaster
+get_rep remove-languages
+get_rep remove-misc
+get_rep ui-config
+get_rep ui-de
+get_rep ui-gnome
+get_rep ui-icons
+get_rep ui-login
+get_rep ui-menu
+get_rep update
 
 echo "FINISHED DOWNLOADING REPOSITORIES"
 echo "Deleting your password"
