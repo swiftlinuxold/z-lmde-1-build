@@ -16,7 +16,7 @@ DIR_DEVELOP=''
 # Check to see if this script is operating in chroot mode.
 # /home/mint directory only exists in chroot mode
 IS_CHROOT=0
-if [ -d "/home/mint" ]; then
+if [ -d "/usr/lib/live-installer" ]; then
 	IS_CHROOT=1 # in chroot mode
 	DIR_DEVELOP=/usr/local/bin/develop 
 else
@@ -35,7 +35,7 @@ python $DIR_DEVELOP/browser/main.py
 python $DIR_DEVELOP/add_apps/main.py
 
 python $DIR_DEVELOP/ui-login/main.py
-# python $DIR_DEVELOP/ui-gnome/main.py
+python $DIR_DEVELOP/ui-gnome/main.py
 python $DIR_DEVELOP/ui-de/main.py
 python $DIR_DEVELOP/ui-icons/main.py
 python $DIR_DEVELOP/ui-menu/main.py
