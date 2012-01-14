@@ -31,36 +31,20 @@ fi
 # Setting up apt-get/Synaptic MUST come first, because
 # some repositories require installing packages.
 python $DIR_DEVELOP/apt/main.py
-python $DIR_DEVELOP/browser/main.py
-python $DIR_DEVELOP/add_apps/main.py
 
+python $DIR_DEVELOP/add-misc/main.py
+python $DIR_DEVELOP/browser/main.py
+
+# Set up user interface
 python $DIR_DEVELOP/ui-login/main.py
 python $DIR_DEVELOP/ui-gnome/main.py
 python $DIR_DEVELOP/ui-de/main.py
 python $DIR_DEVELOP/ui-icons/main.py
 python $DIR_DEVELOP/ui-menu/main.py
 python $DIR_DEVELOP/ui-config/main.py
+
 # python $DIR_DEVELOP/1-build/cosmetic-regular.py
 
-#sh $DIR_DEVELOP/add_help/main.sh 
-#sh $DIR_DEVELOP/conky/main.sh
-#sh $DIR_DEVELOP/control_center/main.sh
-#sh $DIR_DEVELOP/iceape/main.sh
-#sh $DIR_DEVELOP/icewm/main.sh
-#sh $DIR_DEVELOP/installer/main.sh
-#sh $DIR_DEVELOP/mime/main.sh
-#sh $DIR_DEVELOP/rox/main.sh
-#sh $DIR_DEVELOP/security/main.sh
-#sh $DIR_DEVELOP/slim/main.sh
-#sh $DIR_DEVELOP/sylpheed/main.sh
-#sh $DIR_DEVELOP/wallpaper-standard/main.sh
-
-#sh $DIR_DEVELOP/remove_languages/main.sh
-#sh $DIR_DEVELOP/remove_packages/main.sh
-
-
-#sh $DIR_DEVELOP/1-build/remove_deb.sh # Removes stored *.deb files, must be executed last
-
-sh $DIR_DEVELOP/1-build/final.sh
+sh $DIR_DEVELOP/1-build/final.sh # MUST come last
 
 exit 0
