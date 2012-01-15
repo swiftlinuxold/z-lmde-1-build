@@ -35,6 +35,8 @@ python $DIR_DEVELOP/apt/main.py
 python $DIR_DEVELOP/add-misc/main.py
 python $DIR_DEVELOP/browser/main.py
 
+python $DIR_DEVELOP/remove-misc/main.py
+
 # Set up user interface
 python $DIR_DEVELOP/ui-login/main.py
 python $DIR_DEVELOP/ui-gnome/main.py
