@@ -35,16 +35,15 @@ python $DIR_DEVELOP/apt/main.py
 python $DIR_DEVELOP/add-misc/main.py
 python $DIR_DEVELOP/browser/main.py
 
-python $DIR_DEVELOP/remove-misc/main.py
-
 # Set up user interface
 python $DIR_DEVELOP/ui-login/main.py
 python $DIR_DEVELOP/ui-de/main.py
-python $DIR_DEVELOP/ui-icons/main.py
+# python $DIR_DEVELOP/ui-icons/main.py
 python $DIR_DEVELOP/ui-menu/main.py
 python $DIR_DEVELOP/ui-config/main.py
 
 # python $DIR_DEVELOP/1-build/cosmetic-regular.py
+# python $DIR_DEVELOP/remove-misc/main.py
 python $DIR_DEVELOP/ui-gnome/main.py # Remove GNOME packages, third from last
 python $DIR_DEVELOP/remove-languages/main.py # Must come second from last
 sh $DIR_DEVELOP/1-build/final.sh # MUST come last

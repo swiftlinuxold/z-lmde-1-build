@@ -72,6 +72,7 @@ get_rep 9-test-github
 get_rep add-misc
 get_rep apt
 get_rep browser
+get_rep compare-packages
 get_rep edition-regular
 get_rep forensic
 get_rep installer
