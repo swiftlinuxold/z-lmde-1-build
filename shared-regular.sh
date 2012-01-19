@@ -32,6 +32,7 @@ fi
 # some repositories require installing packages.
 python $DIR_DEVELOP/apt/main.py
 
+python $DIR_DEVELOP/remove-libreoffice/main.py # Remove selected Java and LibreOffice packages
 python $DIR_DEVELOP/add-misc/main.py
 python $DIR_DEVELOP/browser/main.py
 
@@ -46,7 +47,6 @@ python $DIR_DEVELOP/ui-config/main.py
 
 python $DIR_DEVELOP/ui-gnome/main.py # Remove GNOME packages
 python $DIR_DEVELOP/remove-misc/main.py # Remove misc packages
-python $DIR_DEVELOP/ui-libreoffice/main.py # Remove selected Java and LibreOffice packages
 python $DIR_DEVELOP/remove-languages/main.py # Must come second from last
 sh $DIR_DEVELOP/1-build/final.sh # MUST come last
 
