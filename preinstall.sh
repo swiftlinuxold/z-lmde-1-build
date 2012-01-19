@@ -78,6 +78,7 @@ get_rep forensic
 get_rep installer
 get_rep remaster
 get_rep remove-languages
+get_rep remove-libreoffice
 get_rep remove-misc
 get_rep ui-config
 get_rep ui-de
