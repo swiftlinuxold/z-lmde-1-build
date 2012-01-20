@@ -30,6 +30,16 @@ fi
 echo "================================================="
 echo "Removing *.deb files from /var/cache/apt/archives"
 rm /var/cache/apt/archives/*.deb
+echo "\n"
+echo "==============================================="
+echo "Removing files from /var/cache/apt-xapian-index"
+rm -r /var/cache/apt-xapian-index/*
+echo "\n"
+echo "Removing *.bin files from /var/cache/apt"
+rm -r /var/cache/apt/*.bin
+echo "\n"
+echo "Removing files from /var/cache/apt/apt-file"
+rm -r /var/cache/apt/apt-file/*
 
 # Make sure everything in the /home/(username) directory is owned by the (username)
 echo "======================================================"
