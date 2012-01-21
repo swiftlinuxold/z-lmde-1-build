@@ -74,6 +74,7 @@ get_rep apt
 get_rep browser
 get_rep compare-packages
 get_rep edition-regular
+get_rep edition-taylorswift
 get_rep forensic
 get_rep installer
 get_rep remaster
