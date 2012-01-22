@@ -1,30 +1,28 @@
-#!/bin/bash
-# Proper header for a Bash script.
+#! /usr/bin/env python
 
 # Check for root user login
-if [ ! $( id -u ) -eq 0 ]; then
-	echo "You must be root to run this script."
-	echo "Please enter su before running this script again."
-	exit 2
-fi
+import os, sys
+if not os.geteuid()==0:
+    sys.exit("\nOnly root can run this script\n")
 
 # Get your username (not root)
-UNAME=$(awk -v val=1000 -F ":" '$3==val{print $1}' /etc/passwd)
-DIR_DEVELOP=''
+import pwd
+uname=pwd.getpwuid(1000)[0]
 
 # The remastering process uses chroot mode.
 # Check to see if this script is operating in chroot mode.
 # /home/mint directory only exists in chroot mode
-IS_CHROOT=0
-if [ -d "/home/mint" ]; then
-	IS_CHROOT=1 # in chroot mode
-	DIR_DEVELOP=/usr/local/bin/develop 
-else
-	DIR_DEVELOP=/home/$UNAME/develop 
-fi
+is_chroot = os.path.exists('/home/mint')
+dir_develop=''
+if (is_chroot):
+	dir_develop='/usr/local/bin/develop'
+	dir_user = '/home/mint'
+else:
+	dir_develop='/home/' + uname + '/develop'
+	dir_user = '/home/' + uname
 
-# Everything up to this point is common to the script shared-*.sh and all Bash scripts called by shared-*.sh
-# ==========================================================================================================
+# Everything up to this point is common to all Python scripts called by shared-*.sh
+# =================================================================================
 
 # This is the script for transforming LMDE into Regular Swift Linux.
 
