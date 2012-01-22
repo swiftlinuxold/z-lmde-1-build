@@ -78,13 +78,12 @@ get_rep edition-taylorswift
 get_rep forensic
 get_rep installer
 get_rep remaster
-get_rep remove-languages
+get_rep remove-final
+get_rep remove-gnome
 get_rep remove-libreoffice
 get_rep remove-misc
 get_rep ui-config
 get_rep ui-de
-get_rep ui-gnome
-get_rep ui-icons
 get_rep ui-login
 get_rep ui-menu
 get_rep update
