@@ -43,9 +43,9 @@ python $DIR_DEVELOP/ui-config/main.py
 
 # python $DIR_DEVELOP/1-build/cosmetic-regular.py
 
-python $DIR_DEVELOP/ui-gnome/main.py # Remove GNOME packages
+python $DIR_DEVELOP/remove-gnome/main.py # Remove GNOME packages
 python $DIR_DEVELOP/remove-misc/main.py # Remove misc packages
-python $DIR_DEVELOP/remove-languages/main.py # Must come second from last
+python $DIR_DEVELOP/remove-final/main.py # Must come second from last
 sh $DIR_DEVELOP/1-build/final.sh # MUST come last
 
 exit 0
