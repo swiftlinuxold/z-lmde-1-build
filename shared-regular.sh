@@ -40,6 +40,8 @@ python $DIR_DEVELOP/ui-de/main.py
 python $DIR_DEVELOP/ui-menu/main.py
 python $DIR_DEVELOP/ui-config/main.py
 
+python $DIR_DEVELOP/installer/main.py
+
 # python $DIR_DEVELOP/1-build/cosmetic-regular.py
 
 python $DIR_DEVELOP/remove-gnome/main.py # Remove GNOME packages
