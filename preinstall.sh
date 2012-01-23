@@ -75,10 +75,10 @@ get_rep browser
 get_rep compare-packages
 get_rep edition-regular
 get_rep edition-taylorswift
+get_rep final
 get_rep forensic
 get_rep installer
 get_rep remaster
-get_rep remove-final
 get_rep remove-gnome
 get_rep remove-libreoffice
 get_rep remove-misc
