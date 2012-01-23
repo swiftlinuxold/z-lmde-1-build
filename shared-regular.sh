@@ -46,7 +46,6 @@ python $DIR_DEVELOP/installer/main.py
 
 python $DIR_DEVELOP/remove-gnome/main.py # Remove GNOME packages
 python $DIR_DEVELOP/remove-misc/main.py # Remove misc packages
-python $DIR_DEVELOP/remove-final/main.py # Must come second from last
-sh $DIR_DEVELOP/1-build/final.sh # MUST come last
+python $DIR_DEVELOP/final/main.py # Must come second from last
 
 exit 0
