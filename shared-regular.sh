@@ -32,6 +32,12 @@ fi
 # some repositories require installing packages.
 python $DIR_DEVELOP/apt/main.py
 
+# Remove heavyweight apps
+# Deactivate these commands to save time when testing
+python $DIR_DEVELOP/remove-libreoffice/main.py # Remove selected Java and LibreOffice packages
+python $DIR_DEVELOP/remove-gnome/main.py # Remove GNOME packages
+python $DIR_DEVELOP/remove-misc/main.py # Remove misc packages
+
 # Add lightweight apps
 python $DIR_DEVELOP/browser/main.py
 python $DIR_DEVELOP/add-misc/main.py
@@ -46,11 +52,6 @@ python $DIR_DEVELOP/ui-config/main.py
 python $DIR_DEVELOP/installer/main.py
 
 # python $DIR_DEVELOP/1-build/cosmetic-regular.py
-
-# Remove heavyweight apps
-python $DIR_DEVELOP/remove-libreoffice/main.py # Remove selected Java and LibreOffice packages
-python $DIR_DEVELOP/remove-gnome/main.py # Remove GNOME packages
-python $DIR_DEVELOP/remove-misc/main.py # Remove misc packages
 
 # Final touches
 python $DIR_DEVELOP/final/main.py # Must come last
