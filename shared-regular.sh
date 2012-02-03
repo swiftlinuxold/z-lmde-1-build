@@ -54,6 +54,9 @@ python $DIR_DEVELOP/installer/main.py
 # Add security features
 python $DIR_DEVELOP/security/main.py
 
+# Add forensic features
+python $DIR_DEVELOP/forensic/main.py
+
 # python $DIR_DEVELOP/1-build/cosmetic-regular.py
 
 # Final touches
