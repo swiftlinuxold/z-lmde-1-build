@@ -51,6 +51,9 @@ python $DIR_DEVELOP/ui-config/main.py
 # Add installer
 python $DIR_DEVELOP/installer/main.py
 
+# Add security features
+python $DIR_DEVELOP/security/main.py
+
 # python $DIR_DEVELOP/1-build/cosmetic-regular.py
 
 # Final touches
