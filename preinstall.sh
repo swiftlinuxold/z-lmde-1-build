@@ -73,6 +73,7 @@ get_rep add-misc
 get_rep apt
 get_rep browser
 get_rep compare-packages
+get_rep diet
 get_rep edition-taylorswift
 get_rep final
 get_rep forensic
