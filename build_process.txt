@@ -1,0 +1,4 @@
+build-regular.sh -> $DIR_DEVELOP/remaster/main.sh
+-> copy $DIR_DEVELOP/remaster/usr_lib_linuxmint_mintConstructor/mintConstructor.py 
+to /usr/lib/linuxmint/mintConstructor/mintConstructor.py
+-> execute /usr/lib/linuxmint/mintConstructor/mintConstructor.py
