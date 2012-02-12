@@ -9,3 +9,5 @@ sh preinstall.sh
 
 To transform LMDE into Regular Swift Linux, enter:
 sudo sh desktop-regular.sh
+
+NOTE: The scripts for building Diet Swift Linux and the special editions ASSUME that you have already created Regular Swift Linux.  If you've made changes to the Regular Swift Linux script, you MUST rebuild Regular Swift Linux to ensure that these changes carry over into Diet Swift Linux and the special editions.
