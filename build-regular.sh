@@ -29,8 +29,4 @@ while [ ! -f $BASE_ISO ];
 
 su -c "sh $DIR_DEVELOP/1-build/preinstall.sh" $UNAME
 
-# rm -r $DIR_DEVELOP/temp
-su -c "mkdir $DIR_DEVELOP/temp" $UNAME
-# sh $DIR_DEVELOP/remaster/main.sh | tee -a $DIR_DEVELOP/temp/screenoutput.txt
 sh $DIR_DEVELOP/remaster/main.sh
-# chown $UNAME:users $DIR_DEVELOP/temp/screenoutput.txt
