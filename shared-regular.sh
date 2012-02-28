@@ -38,9 +38,11 @@ python $DIR_DEVELOP/remove-libreoffice/main.py # Remove selected Java and LibreO
 python $DIR_DEVELOP/remove-gnome/main.py # Remove GNOME packages
 python $DIR_DEVELOP/remove-misc/main.py # Remove misc packages
 
-# Add lightweight apps
-python $DIR_DEVELOP/browser/main.py
+# Add lightweight apps (some needed for later steps in this process)
 python $DIR_DEVELOP/add-misc/main.py
+
+# Replace Firefox with Iceweasel, add ad-blocking app
+python $DIR_DEVELOP/browser/main.py
 
 # Set up user interface
 python $DIR_DEVELOP/ui-login/main.py
