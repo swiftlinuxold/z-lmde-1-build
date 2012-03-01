@@ -88,6 +88,7 @@ get_rep ui-de
 get_rep ui-login
 get_rep ui-menu
 get_rep update
+get_rep wallpaper
 
 echo "FINISHED DOWNLOADING REPOSITORIES"
 echo "Deleting your password"
