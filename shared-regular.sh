@@ -32,6 +32,10 @@ fi
 # some repositories require installing packages.
 python $DIR_DEVELOP/apt/main.py
 
+# Replace Firefox with Iceweasel, add ad-blocking app
+# Does not work if executed after /add-misc/main.py
+python $DIR_DEVELOP/browser/main.py
+
 # Remove heavyweight apps
 # Deactivate these commands to save time when testing
 python $DIR_DEVELOP/remove-libreoffice/main.py # Remove selected Java and LibreOffice packages
@@ -40,9 +44,6 @@ python $DIR_DEVELOP/remove-misc/main.py # Remove misc packages
 
 # Add lightweight apps (some needed for later steps in this process)
 python $DIR_DEVELOP/add-misc/main.py
-
-# Replace Firefox with Iceweasel, add ad-blocking app
-python $DIR_DEVELOP/browser/main.py
 
 # Set up user interface
 python $DIR_DEVELOP/wallpaper/main.py
