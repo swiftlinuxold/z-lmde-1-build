@@ -75,6 +75,7 @@ get_rep browser
 get_rep compare-packages
 get_rep diet
 get_rep edition-chi
+get_rep edition-mn
 get_rep edition-ts
 get_rep final
 get_rep forensic
