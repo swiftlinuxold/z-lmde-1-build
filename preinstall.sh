@@ -74,7 +74,8 @@ get_rep apt
 get_rep browser
 get_rep compare-packages
 get_rep diet
-get_rep edition-taylorswift
+get_rep edition-chi
+get_rep edition-ts
 get_rep final
 get_rep forensic
 get_rep installer
@@ -83,6 +84,7 @@ get_rep remove-gnome
 get_rep remove-libreoffice
 get_rep remove-misc
 get_rep security
+get_rep special
 get_rep ui-config
 get_rep ui-de
 get_rep ui-login
