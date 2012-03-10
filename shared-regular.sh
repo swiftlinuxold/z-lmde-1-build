@@ -49,7 +49,7 @@ python $DIR_DEVELOP/browser/main.py
 python $DIR_DEVELOP/wallpaper/main.py
 python $DIR_DEVELOP/ui-login/main.py
 python $DIR_DEVELOP/ui-de/main.py
-python $DIR_DEVELOP/ui-menu/main.py
+#python $DIR_DEVELOP/ui-menu/main.py
 python $DIR_DEVELOP/ui-config/main.py
 
 # Add installer
