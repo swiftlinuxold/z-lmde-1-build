@@ -49,8 +49,11 @@ python $DIR_DEVELOP/browser/main.py
 python $DIR_DEVELOP/wallpaper/main.py
 python $DIR_DEVELOP/ui-login/main.py
 python $DIR_DEVELOP/ui-de/main.py
-#python $DIR_DEVELOP/ui-menu/main.py
-#python $DIR_DEVELOP/ui-config/main.py
+python $DIR_DEVELOP/ui-menu/main.py
+
+# Set up control center
+python $DIR_DEVELOP/ui-config-network/main.py
+python $DIR_DEVELOP/ui-config/main.py
 
 # Add installer
 python $DIR_DEVELOP/installer/main.py

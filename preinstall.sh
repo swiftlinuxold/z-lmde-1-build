@@ -88,6 +88,7 @@ get_rep remove-misc
 get_rep security
 get_rep special
 get_rep ui-config
+get_rep ui-config-network
 get_rep ui-de
 get_rep ui-login
 get_rep ui-menu
