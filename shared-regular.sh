@@ -52,6 +52,10 @@ python $DIR_DEVELOP/ui-menu/main.py
 
 # Set up control center
 python $DIR_DEVELOP/ui-config-network/main.py
+python $DIR_DEVELOP/ui-config-info/main.py
+python $DIR_DEVELOP/ui-config-printer/main.py
+python $DIR_DEVELOP/ui-config-software/main.py
+python $DIR_DEVELOP/ui-config-wallpaper/main.py
 #python $DIR_DEVELOP/ui-config/main.py
 
 # Add installer
