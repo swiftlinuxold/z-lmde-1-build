@@ -96,16 +96,11 @@ get_rep ui-de
 get_rep ui-login
 get_rep ui-menu
 get_rep update
-get_rep wallpaper
 
 echo "FINISHED DOWNLOADING REPOSITORIES"
 echo "Deleting your password"
 
-
 rm -r /tmp/ssh* # Delete the saved password
-
-
-# sh $DIR_DEVELOP/installer/compile.sh
 
 echo "FINISHED PRE-INSTALLATION PROCEDURE"
 echo "==================================="

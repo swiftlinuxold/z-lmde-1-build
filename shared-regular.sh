@@ -46,7 +46,6 @@ python $DIR_DEVELOP/add-misc/main.py
 python $DIR_DEVELOP/browser/main.py
 
 # Set up user interface
-python $DIR_DEVELOP/wallpaper/main.py
 python $DIR_DEVELOP/ui-login/main.py
 python $DIR_DEVELOP/ui-de/main.py
 python $DIR_DEVELOP/ui-menu/main.py
