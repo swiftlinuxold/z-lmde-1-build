@@ -64,7 +64,6 @@ os.system ('sh ' + dir_develop + '/remaster/main.sh')
 # Execute the remastering script
 os.system ('echo EXECUTING THE REMASTERING SCRIPT')
 command_remaster = 'python /usr/lib/linuxmint/mintConstructor/mintConstructor.py '
-command_remaster = command_remaster + '| tee ' + file_output
 os.system (command_remaster)
 
 # os.system ('python /usr/lib/linuxmint/mintConstructor/mintConstructor.py')
