@@ -83,7 +83,7 @@ get_rep forensic
 get_rep installer
 get_rep remaster
 get_rep remove-gnome
-get_rep remove-libreoffice
+get_rep remove-java
 get_rep remove-misc
 get_rep security
 get_rep special
