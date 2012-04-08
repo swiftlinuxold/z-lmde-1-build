@@ -33,6 +33,11 @@ def exec_script (repository):
 # some repositories require installing packages.
 exec_script ('apt')
 
+# Set up user interface
+exec_script ('ui-login')
+exec_script ('ui-de')
+exec_script ('ui-menu')
+
 # Remove heavyweight apps
 # Deactivate these commands to save time when testing
 exec_script ('remove-java') # Remove selected Java and LibreOffice packages
@@ -45,11 +50,6 @@ exec_script ('add-misc')
 # Replace Firefox with Iceweasel, add ad-blocking app
 # Does not work if executed after /add-misc/main.py
 exec_script ('browser')
-
-# Set up user interface
-exec_script ('ui-login')
-exec_script ('ui-de')
-exec_script ('ui-menu')
 
 # Set up control center
 exec_script ('ui-config-network')
