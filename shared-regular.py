@@ -33,17 +33,17 @@ def exec_script (repository):
 # some repositories require installing packages.
 exec_script ('apt')
 
-# Set up user interface
-exec_script ('ui-login')
-exec_script ('ui-de')
-exec_script ('ui-menu')
-
 # Set up control center
 exec_script ('ui-config-network')
 exec_script ('ui-config-info')
 exec_script ('ui-config-printer')
 exec_script ('ui-config-software')
 exec_script ('ui-config-wallpaper')
+
+# Set up user interface
+#exec_script ('ui-login')
+#exec_script ('ui-de')
+#exec_script ('ui-menu')
 
 # Add security features
 exec_script ('security')
