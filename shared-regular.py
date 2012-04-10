@@ -60,8 +60,8 @@ exec_script ('add-misc')
 
 # Remove heavyweight apps
 # Deactivate these commands to save time when testing
-#exec_script ('remove-java') # Remove selected Java and LibreOffice packages
-#exec_script ('remove-gnome') # Remove GNOME packages
+exec_script ('remove-java') # Remove selected Java and LibreOffice packages
+exec_script ('remove-gnome') # Remove GNOME packages
 #exec_script ('remove-misc') # Remove misc packages
 
 # Add forensic features
