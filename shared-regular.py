@@ -33,6 +33,12 @@ def exec_script (repository):
 # some repositories require installing packages.
 exec_script ('apt')
 
+# Add security features
+exec_script ('security')
+
+# Add installer
+exec_script ('installer')
+
 # Set up control center
 exec_script ('ui-config-network')
 exec_script ('ui-config-info')
@@ -45,18 +51,12 @@ exec_script ('ui-login')
 exec_script ('ui-de')
 exec_script ('ui-menu')
 
-# Add security features
-exec_script ('security')
-
-# Add installer
-exec_script ('installer')
+# Add lightweight apps
+exec_script ('add-misc')
 
 # Replace Firefox with Iceweasel, add ad-blocking app
 # Does not work if executed after /add-misc/main.py
 #exec_script ('browser')
-
-# Add lightweight apps
-#exec_script ('add-misc')
 
 # Remove heavyweight apps
 # Deactivate these commands to save time when testing
