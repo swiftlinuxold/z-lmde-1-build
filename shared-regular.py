@@ -56,16 +56,16 @@ exec_script ('add-misc')
 
 # Replace Firefox with Iceweasel, add ad-blocking app
 # Does not work if executed after /add-misc/main.py
-#exec_script ('browser')
+exec_script ('browser')
 
 # Remove heavyweight apps
 # Deactivate these commands to save time when testing
 exec_script ('remove-java') # Remove selected Java and LibreOffice packages
 exec_script ('remove-gnome') # Remove GNOME packages
-#exec_script ('remove-misc') # Remove misc packages
+exec_script ('remove-misc') # Remove misc packages
 
 # Add forensic features
-#exec_script ('forensic')
+exec_script ('forensic')
 
 # Final touches
 exec_script ('final') # Must come last
