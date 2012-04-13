@@ -33,6 +33,49 @@ def exec_script (repository):
 # some repositories require installing packages.
 exec_script ('apt')
 
+# =============================================================================
+# To save time for testing purposes, disable the commands in the section below.
+# Do NOT disable the remove-* scripts without also disabling the update script.
+# ============================================================================= 
+
+# REMOVE HEAVYWEIGHT APPS HERE
+# In the interest of saving time, this must be done BEFORE updating the pre-installed packages.
+# If you leave these heavyweight apps installed, updating the setup takes MUCH longer. 
+exec_script ('remove-java') # Remove selected Java and LibreOffice packages
+exec_script ('remove-gnome') # Remove GNOME packages
+exec_script ('remove-misc') # Remove misc packages
+
+# REMOVE OTHER APPS HERE
+# Need to separate the removal of Firefox and the addition/configuration of Iceweasel
+# and move the Iceweasel part to after the updates.
+# Need to split the removal of the Linux Mint wallpaper from ui-config-wallpaper script
+# and move it to this section.
+exec_script ('browser')
+
+# UPDATE THE SETUP HERE
+# Timing is key for updates.
+# If the updates are too early, then packages to be deleted are unnecessarily updated.
+# If the updates are too late, changes made by Swift Linux scripts to pre-installed packages 
+# are wiped out.
+# To save time for testing purposes, disable the updates AND the section above.
+# If you disable the section above but leave the updating enabled, 
+# the process will take MUCH longer.
+
+# Update commands here (under construction)
+# apt-get update
+# apt-get upgrade
+
+# Add forensic features
+exec_script ('forensic')
+
+# Add misc. apps
+exec_script ('add-misc')
+
+# =============================================================================
+# To save time for testing purposes, disable the commands in the section above.
+# Do NOT disable the remove-* scripts without also disabling the update script.
+# ============================================================================= 
+
 # Add security features
 exec_script ('security')
 
@@ -50,22 +93,6 @@ exec_script ('ui-config-wallpaper')
 exec_script ('ui-login')
 exec_script ('ui-de')
 exec_script ('ui-menu')
-
-# Add lightweight apps
-exec_script ('add-misc')
-
-# Replace Firefox with Iceweasel, add ad-blocking app
-# Does not work if executed after /add-misc/main.py
-exec_script ('browser')
-
-# Remove heavyweight apps
-# Deactivate these commands to save time when testing
-exec_script ('remove-java') # Remove selected Java and LibreOffice packages
-exec_script ('remove-gnome') # Remove GNOME packages
-exec_script ('remove-misc') # Remove misc packages
-
-# Add forensic features
-exec_script ('forensic')
 
 # Final touches
 exec_script ('final') # Must come last
