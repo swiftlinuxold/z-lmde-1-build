@@ -87,7 +87,7 @@ get_rep remove-java
 get_rep remove-misc
 get_rep security
 get_rep special
-get_rep ui-config
+get_rep ui-config-general
 get_rep ui-config-info
 get_rep ui-config-network
 get_rep ui-config-printer
