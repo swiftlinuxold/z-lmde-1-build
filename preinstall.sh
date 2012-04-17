@@ -88,10 +88,12 @@ get_rep remove-misc
 get_rep security
 get_rep special
 get_rep ui-config-general
+get_rep ui-config-hardware
 get_rep ui-config-info
 get_rep ui-config-network
 get_rep ui-config-printer
 get_rep ui-config-software
+get_rep ui-config-system
 get_rep ui-config-wallpaper
 get_rep ui-de
 get_rep ui-login
