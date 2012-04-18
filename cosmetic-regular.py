@@ -61,3 +61,7 @@ os.system ('chmod a+rwx ' + dest)
 dest = '/etc/skel/.icewm/startup'
 shutil.copyfile(src, dest)
 os.system ('chmod a+rwx ' + dest)
+
+# Wallpaper wizard defaults
+os.system ('cp ' + dir_develop + '/ui-config-wallpaper/home_user_dotwallpaper/* ' + dir_user + '/.wallpaper')
+os.system ('cp ' + dir_develop + '/ui-config-wallpaper/home_user_dotwallpaper/* ' + '/etc/skel/.wallpaper')
