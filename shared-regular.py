@@ -83,10 +83,13 @@ exec_script ('security')
 exec_script ('installer')
 
 # Set up control center
-exec_script ('ui-config-network')
+exec_script ('ui-config-general')
+exec_script ('ui-config-hardware')
 exec_script ('ui-config-info')
+exec_script ('ui-config-network')
 exec_script ('ui-config-printer')
 exec_script ('ui-config-software')
+exec_script ('ui-config-system')
 exec_script ('ui-config-wallpaper')
 
 # Set up user interface
