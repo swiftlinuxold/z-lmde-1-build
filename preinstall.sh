@@ -68,7 +68,7 @@ echo "BEGIN OBTAININING REPOSITORIES"
 # Get repositories for Regular Swift Linux
 get_rep 0-intro
 get_rep 1-build
-get_rep 9-test-github
+get_rep 2-checklists
 get_rep add-misc
 get_rep apt
 get_rep browser
