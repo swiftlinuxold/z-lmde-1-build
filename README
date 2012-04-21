@@ -21,3 +21,5 @@ and the special editions:
 script ~/build-all.txt
 sudo sh ~/develop/1-build/build-all.sh
 exit
+
+The checklists for Swift Linux are in the "2-checklists" repository.
