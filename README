@@ -7,7 +7,17 @@ git clone git@github.com:swiftlinux/1-build.git
 cd ~/develop/1-build
 sh preinstall.sh
 
-To transform LMDE into Regular Swift Linux, enter:
+To transform your LMDE installation into Regular Swift Linux, enter:
 sudo sh desktop-regular.sh
 
-NOTE: The scripts for building Diet Swift Linux and the special editions ASSUME that you have already created Regular Swift Linux.  If you've made changes to the Regular Swift Linux script, you MUST rebuild Regular Swift Linux to ensure that these changes carry over into Diet Swift Linux and the special editions.
+Instructions for transforming your LMDE installation into a special edition of Swift Linux are
+in the "special" repository.
+
+Instructions for transforming your LMDE installation into Diet Swift Linux are in the "diet"
+repository.
+
+COMMANDS FOR CREATING the ISO files of Regular Swift Linux, Diet Swift Linux, 
+and the special editions:
+script ~/build-all.txt
+sudo sh ~/develop/1-build/build-all.sh
+exit
