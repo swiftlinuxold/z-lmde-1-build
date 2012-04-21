@@ -67,6 +67,9 @@ exec_script ('forensic')
 # Add misc. apps
 exec_script ('add-misc')
 
+# Add help pages
+exec_script ('add-help')
+
 # Add security features
 exec_script ('security')
 
