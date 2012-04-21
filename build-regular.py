@@ -52,12 +52,6 @@ command_preinstall = command_preinstall + 'sh ' + dir_develop + '/1-build/preins
 command_preinstall = command_preinstall + chr(34) + ' ' + uname
 os.system (command_preinstall)
 
-# Prepare to save the screen output
-dir_output = dir_develop + '/temp-output'
-elim_dir (dir_output)
-create_dir (dir_output)
-file_output = dir_output + '/build-regular.txt'
-
 # Prepare the remastering script
 os.system ('sh ' + dir_develop + '/remaster/main.sh')
 
@@ -66,8 +60,3 @@ os.system ('echo EXECUTING THE REMASTERING SCRIPT')
 command_remaster = 'python /usr/lib/linuxmint/mintConstructor/mintConstructor.py '
 os.system (command_remaster)
 
-# os.system ('python /usr/lib/linuxmint/mintConstructor/mintConstructor.py')
-
-# Change ownership of file containing screen output
-command_chown = 'chown ' + uname + ':users ' + file_output
-os.system (command_chown)

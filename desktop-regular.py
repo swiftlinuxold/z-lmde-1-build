@@ -40,10 +40,7 @@ command_preinstall = command_preinstall + chr(34) + ' ' + uname
 os.system (command_preinstall)
 
 # Prepare to save the screen output
-dir_output = dir_develop + '/temp-output'
-elim_dir (dir_output)
-create_dir (dir_output)
-file_output = dir_output + '/desktop-regular.txt'
+file_output = dir_user + '/desktop-regular.txt'
 
 # Transformation
 command_shared = 'python ' + dir_develop + '/1-build/shared-regular.py | tee ' + file_output
