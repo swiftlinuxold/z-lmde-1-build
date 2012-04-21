@@ -33,11 +33,6 @@ def exec_script (repository):
 # some repositories require installing packages.
 exec_script ('apt')
 
-# =============================================================================
-# To save time for testing purposes, disable the commands in the section below.
-# Do NOT disable the remove-* scripts without also disabling the update script.
-# ============================================================================= 
-
 # REMOVE HEAVYWEIGHT APPS HERE
 # In the interest of saving time, this must be done BEFORE updating the pre-installed packages.
 # If you leave these heavyweight apps installed, updating the setup takes MUCH longer. 
@@ -46,11 +41,9 @@ exec_script ('remove-gnome') # Remove GNOME packages
 exec_script ('remove-misc') # Remove misc packages
 
 # REMOVE OTHER APPS HERE
-# Need to separate the removal of Firefox and the addition/configuration of Iceweasel
-# and move the Iceweasel part to after the updates.
 # Need to split the removal of the Linux Mint wallpaper from ui-config-wallpaper script
 # and move it to this section.
-exec_script ('browser')
+
 
 # UPDATE THE SETUP HERE
 # Timing is key for updates.
@@ -65,16 +58,14 @@ exec_script ('browser')
 # apt-get update
 # apt-get upgrade
 
+# Add Iceweasel
+exec_script ('browser')
+
 # Add forensic features
 exec_script ('forensic')
 
 # Add misc. apps
 exec_script ('add-misc')
-
-# =============================================================================
-# To save time for testing purposes, disable the commands in the section above.
-# Do NOT disable the remove-* scripts without also disabling the update script.
-# ============================================================================= 
 
 # Add security features
 exec_script ('security')
