@@ -69,6 +69,7 @@ echo "BEGIN OBTAININING REPOSITORIES"
 get_rep 0-intro
 get_rep 1-build
 get_rep 2-checklists
+get_rep 3-changelog
 get_rep add-help
 get_rep add-misc
 get_rep apt
