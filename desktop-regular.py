@@ -33,12 +33,6 @@ def create_dir (dir_to_create):
     if not (os.path.exists(dir_to_create)):
         os.mkdir (dir_to_create)
 
-# Download the necessary repositories
-command_preinstall = 'su -c ' + chr(34)
-command_preinstall = command_preinstall + 'sh ' + dir_develop + '/1-build/preinstall.sh'
-command_preinstall = command_preinstall + chr(34) + ' ' + uname
-os.system (command_preinstall)
-
 # Prepare to save the screen output
 file_output = dir_user + '/desktop-regular.txt'
 
