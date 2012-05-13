@@ -1,0 +1,13 @@
+CHECKLIST FOR NEW VERSION OF SWIFT LINUX
+
+*  Update Swift Linux version number in ~/develop/ui-de/dotconkyrc/conkyrc-regular
+
+CHECKLIST FOR NEW VERSION OF LMDE
+
+*  Update LMDE version number in ~/develop/ui-de/dotconkyrc/conkyrc-regular .
+
+*  Update self.isoFilename value in ~/develop/remaster/usr_lib_linuxmint_mintConstructor/mintConstructor.py .
+
+*  Update the remove-java, remove-gnome, and remove-misc repositories.
+
+*  It may be necessary to add packages that were included in the old version of LMDE but not the new one.
