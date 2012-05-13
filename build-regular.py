@@ -35,7 +35,7 @@ def create_dir (dir_to_create):
 
 # Obtain the LMDE ISO file
 os.system ('mount -t vboxsf guest /mnt/host')
-base_iso = '/mnt/host/linuxmint-201109-gnome-dvd-32bit.iso'
+base_iso = '/mnt/host/linuxmint-201204-mate-cinnamon-dvd-32bit.iso'
 while not (os.path.isfile (base_iso)):
     print ('Could not find your ' + base_iso + 'file.')
     print ('Please go to your host OS and copy the appropriate file into')

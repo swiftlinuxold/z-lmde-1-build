@@ -8,6 +8,8 @@ CHECKLIST FOR NEW VERSION OF LMDE
 
 *  Update self.isoFilename value in ~/develop/remaster/usr_lib_linuxmint_mintConstructor/mintConstructor.py .
 
+*  Update base_iso value in ~/develop/1-build/build-regular.py .
+
 *  Update the remove-java, remove-gnome, and remove-misc repositories.
 
 *  It may be necessary to add packages that were included in the old version of LMDE but not the new one.
