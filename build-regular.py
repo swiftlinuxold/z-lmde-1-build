@@ -46,12 +46,6 @@ while not (os.path.isfile (base_iso)):
 
 print (base_iso + ' file found, ready to proceed')
 
-# Download the necessary repositories      
-command_preinstall = 'su -c ' + chr(34)
-command_preinstall = command_preinstall + 'sh ' + dir_develop + '/1-build/preinstall.sh'
-command_preinstall = command_preinstall + chr(34) + ' ' + uname
-os.system (command_preinstall)
-
 # Prepare the remastering script
 os.system ('sh ' + dir_develop + '/remaster/main.sh')
 
