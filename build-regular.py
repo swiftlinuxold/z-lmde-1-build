@@ -33,19 +33,6 @@ def create_dir (dir_to_create):
     if not (os.path.exists(dir_to_create)):
         os.mkdir (dir_to_create)
 
-# Obtain the LMDE ISO file
-os.system ('mount -t vboxsf guest /mnt/host')
-base_iso = '/mnt/host/linuxmint-201204-mate-cinnamon-dvd-32bit.iso'
-while not (os.path.isfile (base_iso)):
-    print ('Could not find your ' + base_iso + 'file.')
-    print ('Please go to your host OS and copy the appropriate file into')
-    print ('the /home/(username)/guest directory.')
-    print ('Press Enter when you are finished')
-    var_dummy = raw_input ('TEST')
-    os.system ('mount -t vboxsf guest /mnt/host')
-
-print (base_iso + ' file found, ready to proceed')
-
 # Prepare the remastering script
 os.system ('sh ' + dir_develop + '/remaster/main.sh')
 
