@@ -6,9 +6,14 @@ CHECKLIST FOR NEW VERSION OF LMDE
 
 *  Update LMDE version number in ~/develop/ui-de/dotconkyrc/conkyrc-regular .
 
-*  Update the ~/develop/remaster/usr_lib_linuxmint_mintConstructor/mintConstructor.py script.
-
 *  Update base_iso value in ~/develop/1-build/build-regular.py .
+
+*  Update the LMDE version number in ~/develop/diet/build.py .
+
+*  Update the LMDE version number in ~/develop/special/build.py .
+
+*  Update the ~/develop/remaster/usr_lib_linuxmint_mintConstructor/mintConstructor.py script.
+More details are in the ~/develop/remaster/usr_lib_linuxmint_mintConstructor/notes.txt file.
 
 *  Update the remove-java, remove-gnome, and remove-misc repositories.
 
